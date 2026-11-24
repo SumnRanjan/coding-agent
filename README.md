@@ -1,10 +1,5 @@
 # Week 5: Mini Coding Agent
 
-| Week | Category | Topic | Description | Status |
-|---|---|---|---|---|
-| 5 | Project | Mini Coding Agent | LLM + tools agent that finds and fixes simple C++ bugs, verifies with g++ | Completed |
-| 5 | Production | Observability, Evals, Guardrails | Tracing (tokens, latency, cost), golden-dataset evals with LLM judge, input/tool/output guardrails | Completed |
-
 A small AI agent that fixes simple bugs in C++ code. You describe the bug in plain English; the LLM uses tools to find the bug, edits the line, and the agent compiles and runs the code to check the fix.
 
 No LangGraph or framework: just a plain Python loop, so the agent mechanics are easy to see.
