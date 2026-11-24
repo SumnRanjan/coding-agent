@@ -1,0 +1,40 @@
+{
+  "trace_id": "5068bab0",
+  "name": "eval:off_topic",
+  "model": "openai/gpt-oss-120b",
+  "started_at": "2026-11-24T12:13:22",
+  "summary": {
+    "llm_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "llm_latency_s": 0,
+    "total_latency_s": 0.0,
+    "cost_usd": 0,
+    "tool_calls": 0,
+    "tool_errors": 0,
+    "guardrail_blocks": 1
+  },
+  "final": {
+    "status": "blocked",
+    "attempts": 0,
+    "steps": 0,
+    "edits": 0,
+    "summary": "This agent only fixes code bugs. Describe what the program does wrong.",
+    "diff": ""
+  },
+  "events": [
+    {
+      "type": "input",
+      "t": 0.001,
+      "bug": "How much vacation do I get this year?",
+      "allowed": false,
+      "reason": "This agent only fixes code bugs. Describe what the program does wrong."
+    },
+    {
+      "type": "guardrail",
+      "t": 0.001,
+      "stage": "input",
+      "reason": "This agent only fixes code bugs. Describe what the program does wrong."
+    }
+  ]
+}
