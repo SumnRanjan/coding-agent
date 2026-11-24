@@ -1,4 +1,4 @@
-# Week 5: Mini Coding Agent
+# Mini Coding Agent
 
 A small AI agent that fixes simple bugs in C++ code. You describe the bug in plain English; the LLM uses tools to find the bug, edits the line, and the agent compiles and runs the code to check the fix.
 
